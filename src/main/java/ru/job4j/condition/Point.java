@@ -11,10 +11,10 @@ public class Point {
         System.out.println("result (0, 0) to (2, 0) " + result);
 
         double resultTwo = Point.distance(0, 0, 3, 0);
-        System.out.println("resultTwo (2, 2) to (2, 2) " + resultTwo);
+        System.out.println("resultTwo (0, 0) to (3, 0) " + resultTwo);
 
         double resultThree = Point.distance(0, 0, 4, 4);
-        System.out.println("resultTwo (2, 2) to (2, 2) " + resultThree);
+        System.out.println("resultTwo (0, 0) to (4, 4) " + resultThree);
     }
 
 }
