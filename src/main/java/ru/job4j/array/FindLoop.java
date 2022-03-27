@@ -18,7 +18,6 @@ public class FindLoop {
         for (int index = start; index <= finish; index++) {
             if (data[index] == el) {
                 rst = index;
-                System.out.println("result = " + rst);
                 break;
             }
         }
