@@ -13,7 +13,6 @@ public class SortSelectedTest {
         Assert.assertArrayEquals(expected, result);
     }
 
-    //Напишите минимум два тест-метода, один с 3 числами, другой с 5.
     @Test
     public void whenSortArrayOf5elementsToo() {
         int[] data = new int[] {15, 14, 21, 32, 5};
