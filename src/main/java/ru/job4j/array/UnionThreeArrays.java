@@ -10,27 +10,13 @@ public class UnionThreeArrays {
 
         for (int i = 1; i < middle.length - 1; i++) {
             if (i % 2 != 0) {
-                for (int j = i; j < j + 1; j++) {
-                    if (j % 2 == 0) {
-                        result[j] = middle[i];
-                    }
-                    if (j == middle.length) {
-                        break;
-                    }
-                }
+                result[i + 1] = middle[i];
             }
         }
 
         for (int i = 0; i < right.length - 1; i++) {
             if (i % 2 == 0) {
-                for (int j = i; j < j + 1; j++) {
-                    if (j % 2 != 0) {
-                        result[j] = right[i];
-                    }
-                    if (j == right.length) {
-                        break;
-                    }
-                }
+                result[i + 1] = right[i];
             }
         }
 
