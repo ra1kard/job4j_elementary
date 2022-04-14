@@ -19,9 +19,13 @@ public class Converter {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
 
-                for (int k = 0; k < j + 1; k++) {
-                    for (int l = 0; l < k + 1; l++) {
-                        arraySecond[k][l] = array[i][j];
+                for (int k = 0; k < k + 1; k++) {
+                    for (int l = 0; l < l + 1; l++) {
+                        if (k < arraySecond.length && l < arraySecond[k].length) {
+                            arraySecond[k][l] = array[i][j];
+                        } /*else {
+                            arraySecond[k - 1][l - 1] = 0;
+                        }*/
                     }
                 }
 
