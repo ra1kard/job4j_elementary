@@ -18,6 +18,7 @@ public class EditorElementsArrayTest {
                 {0, 3, 2}};
         assertThat(rsl, is(expected));
     }
+
     @Test
     public void changeDataTwo() {
         int[][] array =     {{5},
