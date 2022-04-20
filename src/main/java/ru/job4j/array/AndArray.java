@@ -18,9 +18,6 @@ public class AndArray {
         }
 
         int[] result2 = Arrays.copyOf(result, k);
-        for (int i = 0; i < result2.length; i++) {
-            System.out.print(result2[i]);
-        }
         return result2;
     }
 
