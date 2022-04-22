@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class OrArray {
 
     /**
-     * Собираешь из двух один, потом одинаковые удаляешь, потом сортируешь
+     *  Собираешь из двух один, потом одинаковые удаляешь, потом сортируешь
      * */
 
     public static int[] or(int[] left, int[] right) {
@@ -65,15 +65,6 @@ public class OrArray {
         }
         System.out.println();
         return result;
-    }
-
-    public static void main(String[] args) {
-        OrArray.or(new int[] {}, new int[] {});
-        OrArray.or(new int[] {1}, new int[] {});
-        OrArray.or(new int[] {}, new int[] {1});
-        OrArray.or(new int[] {1, 2}, new int[] {1, 2});
-        OrArray.or(new int[] {1, 2}, new int[] {1, 2, 3});
-        OrArray.or(new int[] {1}, new int[] {2, 3});
     }
 
 }
