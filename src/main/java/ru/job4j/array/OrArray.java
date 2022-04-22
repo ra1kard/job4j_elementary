@@ -64,6 +64,7 @@ public class OrArray {
             System.out.print(result[i] + " ");
         }
         System.out.println();
+
         return result;
     }
 
