@@ -16,7 +16,7 @@ public class IndexOfWithCount {
     }
 
     public static void main(String[] args) {
-        IndexOfWithCount.indexOf(new char[] {'a', 'b', 'c', 'd', 'e', 'c'}, 'c', 2); // expected 5
+        IndexOfWithCount.indexOf(new char[] {'a', 'b', 'c', 'd', 'e', 'c'}, 'c', 2);
     }
 
 }
