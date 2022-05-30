@@ -6,6 +6,7 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 public class EditorElementsArrayTest {
+
     @Test
     public void changeData() {
         int[][] array =     {{1, 8, 3},
@@ -33,4 +34,5 @@ public class EditorElementsArrayTest {
                 {0, 0, 4, 8}};
         assertThat(rsl, is(expected));
     }
+
 }

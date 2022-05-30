@@ -9,7 +9,6 @@ public class MathAbsUsage {
         System.out.println("Разность чисел равна: " + rsl);
         int abs = Math.abs(rsl);
         System.out.println("Абсолютное значение разности чисел равно: " + abs);
-
         int x = 5;
         int y = 3;
         int result = x - y;

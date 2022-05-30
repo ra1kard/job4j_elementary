@@ -28,4 +28,5 @@ public class DummyBotTest {
         String expected = "Это ставит меня в тупик. Задайте другой вопрос.";
         Assert.assertEquals(expected, result);
     }
+
 }

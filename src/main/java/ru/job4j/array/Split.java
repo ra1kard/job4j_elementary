@@ -3,16 +3,13 @@ package ru.job4j.array;
 public class Split {
 
     public static char[][] split(char[] str, char c) {
-
         int countCharC = 1;
         for (int i = 0; i < str.length; i++) {
             if (str[i] == c) {
                 countCharC++;
             }
         }
-
         char[][] result = new char[countCharC][];
-
         int[] nums = new int[countCharC];
         int x = 0;
         int count = 0;
@@ -24,11 +21,9 @@ public class Split {
                 count = 0;
             }
         }
-
         for (int i = 0; i < countCharC; i++) {
             result[i] = new char[nums[i]];
         }
-
         int countStr = 0;
         for (int i = 0; i < result.length; i++) {
             for (int j = 0; j < result[i].length; j++) {
@@ -41,7 +36,6 @@ public class Split {
                 countStr++;
             }
         }
-
         return result;
     }
 

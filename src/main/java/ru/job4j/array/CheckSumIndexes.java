@@ -20,16 +20,13 @@ public class CheckSumIndexes {
                 count++;
             }
         }
-
         for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++) {
                 System.out.print(data[i][j] + " ");
             }
             System.out.println();
         }
-
         System.out.println();
-
         int[] newArray = new int[countNotNull];
         int countNewArray = 0;
         for (int i = 0; i < data.length; i++) {
@@ -40,11 +37,9 @@ public class CheckSumIndexes {
                 }
             }
         }
-
         for (int i = 0; i < newArray.length; i++) {
             System.out.print(newArray[i] + " ");
         }
-
         return newArray;
     }
 

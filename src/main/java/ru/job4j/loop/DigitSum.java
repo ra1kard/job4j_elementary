@@ -5,7 +5,6 @@ public class DigitSum {
     /**
      * Дано число, нужно получить сумму его цифр: 123 => 1+2+3 = 6
      * */
-
     public static int sum(int num) {
         int sum = 0;
         while (num != 0) {

@@ -9,7 +9,6 @@ public class Anomaly {
         int count = 0;
         int rowOne = 0;
         int rowTwo = 0;
-
         for (int i = 0; i < data.length; i++) {
             if (data[i] >= up) {
                 rowOne++;
@@ -22,19 +21,16 @@ public class Anomaly {
         } else if (rowOne > 0 || rowTwo > 0) {
             count = 1;
         }
-
         if (rowOne == 1) {
             result[0] = new int[rowOne + 1];
         } else {
             result[0] = new int[rowOne];
         }
-
         if (rowTwo == 1) {
             result[1] = new int[rowTwo + 1];
         } else {
             result[1] = new int[rowTwo];
         }
-
         int countX = 0;
         int countY = 0;
         for (int i = 0; i < data.length; i++) {
@@ -48,13 +44,11 @@ public class Anomaly {
                 }
             }
         }
-
         if (countX == 1) {
             result[0][1] = result[0][0];
         } else if (countY == 1) {
             result[1][1] = result[1][0];
         }
-
         return Arrays.copyOf(result, count);
     }
 

@@ -9,14 +9,12 @@ public class SubtractMinMax {
                 max = ints[i];
             }
         }
-
         int min = ints[0];
         for (int i = 1; i < ints.length; i++) {
             if (ints[i] < min) {
                 min = ints[i];
             }
         }
-
         return max - min;
     }
 

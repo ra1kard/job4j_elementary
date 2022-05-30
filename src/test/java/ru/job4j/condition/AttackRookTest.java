@@ -30,4 +30,5 @@ public class AttackRookTest {
         boolean check = AttackRook.check("F5", "C8");
         assertThat(check, is(false));
     }
+
 }

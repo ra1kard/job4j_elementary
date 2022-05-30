@@ -6,7 +6,6 @@ public class SymmetricDiff {
         int[] result = new int[left.length + right.length];
         int count = 0;
         int index = 0;
-
         for (int i = 0; i < left.length; i++) {
             for (int j = 0; j < right.length; j++) {
                 if (left[i] == right[j]) {
@@ -28,11 +27,9 @@ public class SymmetricDiff {
                 count++;
             }
         }
-
         int[] result2 = new int[left.length + right.length];
         count = 0;
         index = 0;
-
         for (int i = 0; i < right.length; i++) {
             for (int j = 0; j < left.length; j++) {
                 if (right[i] == left[j]) {
@@ -54,7 +51,6 @@ public class SymmetricDiff {
                 count++;
             }
         }
-
         int[] resultGeneral = new int[resultFirst.length + resultSecond.length];
         count = 0;
         for (int i = 0; i < resultFirst.length; i++) {
@@ -65,11 +61,9 @@ public class SymmetricDiff {
             resultGeneral[count] = resultSecond[i];
             count++;
         }
-
         for (int i = 0; i < resultGeneral.length; i++) {
             System.out.print(resultGeneral[i] + " ");
         }
-
         return resultGeneral;
     }
 

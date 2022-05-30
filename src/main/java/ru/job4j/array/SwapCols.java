@@ -4,7 +4,6 @@ public class SwapCols {
 
     public static void swap(int[][] data, int src, int dst) {
         int[] temp = new int[data.length];
-
         for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++) {
                 if (j == src) {
@@ -14,7 +13,6 @@ public class SwapCols {
                 }
             }
         }
-
         for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++) {
                 System.out.print(data[i][j] + " ");

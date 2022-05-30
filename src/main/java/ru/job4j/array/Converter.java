@@ -11,7 +11,6 @@ public class Converter {
             result = n * n;
         }
         int[][] arraySecond = new int[n][n];
-
         int countX = 0;
         int countY = 0;
         for (int i = 0; i < array.length; i++) {
@@ -29,14 +28,12 @@ public class Converter {
                 }
             }
         }
-
         for (int i = 0; i < arraySecond.length; i++) {
             for (int j = 0; j < arraySecond[i].length; j++) {
                 System.out.print(arraySecond[i][j] + " ");
             }
             System.out.println();
         }
-
         return arraySecond;
     }
 

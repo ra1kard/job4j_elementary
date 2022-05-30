@@ -7,11 +7,9 @@ public class RandomDream {
         result = num / prizes.length;
         result = result * prizes.length;
         result = num - result;
-
         if (result == 0) {
             result += 4;
         }
-
         return prizes[result - 1];
     }
 

@@ -5,7 +5,6 @@ public class PositiveOrNegative {
     public static boolean check(int[] data) {
         int countMinus = 0;
         int countPlus = 0;
-
         for (int i = 0; i < data.length; i++) {
             if (data[i] > 0) {
                 countPlus++;
@@ -13,13 +12,11 @@ public class PositiveOrNegative {
                 countMinus++;
             }
         }
-
         if (countMinus % 2 != 0) {
             return true;
         } else if (countPlus % 2 == 0) {
             return false;
         }
-
         return false;
     }
 

@@ -8,18 +8,15 @@ public class NumberToArray {
         for (char element : str.toCharArray()) {
             count++;
         }
-
         String[] result = new String[count];
         for (int i = 0; i < result.length; i++) {
             char ch = str.charAt(str.length() - 1 - i);
             result[i] = String.valueOf(ch);
         }
-
         int[] result2 = new int[count];
         for (int i = 0; i < result.length; i++) {
             result2[i] = Integer.parseInt(result[i]);
         }
-
         return result2;
     }
 

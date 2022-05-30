@@ -8,7 +8,6 @@ public class SplitExample {
         for (String word : words) {
             System.out.println(word);
         }
-
         String str2 = "Красный, оранжевый, желтый";
         String[] words2 = str2.split(", ");
         for (String word : words2) {

@@ -4,7 +4,6 @@ public class SwapRows {
 
     public static void swap(int[][] data, int src, int dst) {
         int[] temp = new int[data[src].length];
-
         for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++) {
                 if (i == src) {
@@ -15,7 +14,6 @@ public class SwapRows {
                 }
             }
         }
-
         for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++) {
                 System.out.print(data[i][j] + " ");

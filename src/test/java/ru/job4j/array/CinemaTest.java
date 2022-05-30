@@ -9,6 +9,7 @@ import static org.junit.Assert.*;
 import static ru.job4j.array.Cinema.Place;
 
 public class CinemaTest {
+
     @Test
     public void checkEmptyPlace() {
         Place[][] places = {

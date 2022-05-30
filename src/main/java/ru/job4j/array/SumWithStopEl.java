@@ -11,7 +11,6 @@ public class SumWithStopEl {
                 sum += data[i];
             }
         }
-
         if (sum % 2 == 0) {
             return sum;
         } else {

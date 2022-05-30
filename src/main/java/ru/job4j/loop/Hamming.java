@@ -5,7 +5,6 @@ public class Hamming {
     public static int checkStrings(String left, String right) {
         int value = left.length();
         int hamming = 0;
-
         for (int i = 0; i < value; i++) {
             if (left.charAt(i) != right.charAt(i)) {
                 hamming++;

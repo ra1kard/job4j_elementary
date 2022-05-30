@@ -6,6 +6,7 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 public class DecodingTest {
+
     @Test
     public void decodeOne() {
         int[] ints = {5, 7, 8, 2, 1};
@@ -21,4 +22,5 @@ public class DecodingTest {
         int[] expected = {2, 1, 4, 0, 3, 1};
         assertThat(rsl, is(expected));
     }
+
 }

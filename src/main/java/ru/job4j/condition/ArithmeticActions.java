@@ -3,7 +3,6 @@ package ru.job4j.condition;
 public class ArithmeticActions {
 
     public static String selectAction(int left, int right, int rsl) {
-
         if (left + right == rsl) {
             return "added";
         } else if (left - right == rsl) {
@@ -15,7 +14,6 @@ public class ArithmeticActions {
         } else {
             return "none";
         }
-
     }
 
 }

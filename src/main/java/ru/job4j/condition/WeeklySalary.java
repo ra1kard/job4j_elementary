@@ -3,12 +3,10 @@ package ru.job4j.condition;
 public class WeeklySalary {
 
     public static int calculate(int[] hours) {
-
         int priceDefaultHour = 10;
         int priceOvertimeHour = 15;
         int valueMoneyAtDay;
         int valueMoneyAtWeek = 0;
-
         for (int i = 0; i < hours.length; i++) {
             valueMoneyAtDay = 0;
             if (hours[i] <= 8) {

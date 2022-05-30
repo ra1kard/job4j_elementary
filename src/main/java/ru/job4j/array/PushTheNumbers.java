@@ -11,7 +11,6 @@ public class PushTheNumbers {
                 i++;
             }
         }
-
         if (column != 0) {
             int i = row;
             int j = 0;
@@ -20,7 +19,6 @@ public class PushTheNumbers {
                 j++;
             }
         }
-
         if (column < array[row].length - 1) {
             int i = row;
             int j = array.length - 1;
@@ -29,7 +27,6 @@ public class PushTheNumbers {
                 j--;
             }
         }
-
         if (row < array[row].length - 1) {
             int i = array.length - 1;
             int j = column;
@@ -38,7 +35,6 @@ public class PushTheNumbers {
                 i--;
             }
         }
-
         array[row][column] = 0;
     }
 

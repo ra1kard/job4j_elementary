@@ -6,6 +6,7 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 public class DividerTest {
+
     @Test
     public void checkTrue() {
         int[] ints = {2, 3, 4};

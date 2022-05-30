@@ -6,7 +6,6 @@ public class TriangleMatrix {
         int[][] triangle = new int[count][];
         int cell = 1;
         int value = 1;
-
         for (int i = 0; i < triangle.length; i++) {
             triangle[i] = new int[cell];
             for (int j = 0; j < i + 1; j++) {
@@ -15,7 +14,6 @@ public class TriangleMatrix {
             }
             cell++;
         }
-
         for (int i = 0; i < triangle.length; i++) {
             for (int j = 0; j < triangle[i].length; j++) {
                 System.out.print(triangle[i][j]);
