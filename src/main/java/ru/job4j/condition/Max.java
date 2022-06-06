@@ -8,4 +8,15 @@ public class Max {
         return result;
     }
 
+    public static int max(int first, int second, int third) {
+        int checkFirstSecond = max(first, second);
+        return max(checkFirstSecond, third);
+    }
+
+    public static int max(int first, int second, int third, int fourth) {
+        int checkFirstSecond = max(first, second);
+        int checkThirdFourth = max(third, fourth);
+        return max(checkFirstSecond, checkThirdFourth);
+    }
+
 }
