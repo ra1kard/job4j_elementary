@@ -13,9 +13,6 @@ public class UpperCase {
                 result[i] = string[i];
             }
         }
-        for (int i = 0; i < result.length; i++) {
-            System.out.print(result[i]);
-        }
         return result;
     }
 
@@ -28,16 +25,12 @@ public class UpperCase {
                 count++;
             }
         }
-        for (int i = 0; i < result.length; i++) {
-            System.out.print(result[i]);
-        }
-        result = Arrays.copyOf(result, count);
-        return result;
+        return Arrays.copyOf(result, count);
     }
 
     public static void main(String[] args) {
         char[] input = "aLpHa - 1".toCharArray();
-        //UpperCase.toUpperCase(input);
+        UpperCase.toUpperCase(input);
         UpperCase.onlyLowCase(input);
     }
 
