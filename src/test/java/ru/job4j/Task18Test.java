@@ -18,6 +18,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
 public class Task18Test {
+
     @Test
     public void whenHourglassWidthEquals3() {
         ByteArrayInputStream in = new ByteArrayInputStream("5".getBytes());
@@ -26,11 +27,11 @@ public class Task18Test {
         System.setIn(in);
         Task18.main(null);
         String expected =
-                          "*****" + System.lineSeparator()      //5
-                        + " * *" + System.lineSeparator()       //4
-                        + "  *" + System.lineSeparator()        //3
-                        + " * *" + System.lineSeparator()       //4
-                        + "*****";                              //5
+                          "*****" + System.lineSeparator()
+                        + " * *" + System.lineSeparator()
+                        + "  *" + System.lineSeparator()
+                        + " * *" + System.lineSeparator()
+                        + "*****";
         assertThat(out.toString(), is(expected));
     }
 
@@ -72,4 +73,5 @@ public class Task18Test {
                         + "*********";
         assertThat(out.toString(), is(expected));
     }
+
 }
